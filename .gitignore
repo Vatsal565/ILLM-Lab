@@ -1,0 +1,6 @@
+*/.DS_Store
+
+# large files requiring git lfs are ignored
+Lab-5/lab5_artifacts/doc2vec.model.dv.vectors.npy
+Lab-5/lab5_artifacts/fasttext.model.wv.vectors_ngrams.npy
+Lab-4/lab4_artifacts/ngram_counts.pkl
