@@ -6,3 +6,4 @@ Lab-5/lab5_artifacts/fasttext.model.wv.vectors_ngrams.npy
 Lab-4/lab4_artifacts/ngram_counts.pkl
 Lab-6/lab6_artifacts/fasttext_supervised.bin
 Lab-6/lab6_fasttext_vectors/
+Lab-8/lab8_artifacts/run/*.pt

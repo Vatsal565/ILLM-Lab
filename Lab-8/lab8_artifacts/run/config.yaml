@@ -1,0 +1,65 @@
+save_data: lab8_artifacts/run/samples
+src_vocab: lab8_artifacts/run/vocab.en
+tgt_vocab: lab8_artifacts/run/vocab.gu
+overwrite: true
+share_vocab: false
+data:
+  corpus_1:
+    path_src: lab8_artifacts/data/train.en
+    path_tgt: lab8_artifacts/data/train.gu
+    transforms:
+    - sentencepiece
+    - filtertoolong
+  valid:
+    path_src: lab8_artifacts/data/valid.en
+    path_tgt: lab8_artifacts/data/valid.gu
+    transforms:
+    - sentencepiece
+src_subword_model: lab8_artifacts/spm/en.model
+tgt_subword_model: lab8_artifacts/spm/gu.model
+src_seq_length: 200
+tgt_seq_length: 200
+src_vocab_size: 8100
+tgt_vocab_size: 8100
+model_task: seq2seq
+encoder_type: transformer
+decoder_type: transformer
+enc_layers: 4
+dec_layers: 4
+hidden_size: 256
+word_vec_size: 256
+transformer_ff: 1024
+heads: 4
+position_encoding: true
+dropout:
+- 0.2
+attention_dropout:
+- 0.1
+share_decoder_embeddings: true
+seed: 42
+train_steps: 20000
+valid_steps: 1000
+early_stopping: 4
+save_model: lab8_artifacts/run/model
+save_checkpoint_steps: 1000
+keep_checkpoint: 3
+report_every: 200
+batch_type: tokens
+batch_size: 4096
+valid_batch_size: 2048
+accum_count:
+- 1
+optim: adam
+adam_beta2: 0.998
+decay_method: noam
+learning_rate: 2.0
+warmup_steps: 2000
+max_grad_norm: 0.0
+label_smoothing: 0.1
+param_init: 0.0
+param_init_glorot: true
+normalization: tokens
+bucket_size: 32768
+num_workers: 0
+world_size: 1
+gpu_ranks: []
