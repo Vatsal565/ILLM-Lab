@@ -10,3 +10,4 @@ Lab-8/lab8_artifacts/run/*.pt
 Lab-9/lab9_artifacts/*/run/*.pt
 Lab-9/lab9_artifacts/embeddings/fasttext.*.vec
 Lab-10/lab10_artifacts/indicbert_checkpoints/
+Lab-11/lab11_artifacts/features/

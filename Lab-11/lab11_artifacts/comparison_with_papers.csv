@@ -1,0 +1,13 @@
+,SentLen,BShift,SubjNum
+Majority vote,20.0,50.0,50.0
+Human evaluation,100.0,98.0,88.0
+Length (sentence length only),100.0,50.6,50.3
+NB-bi-tfidf,23.0,63.8,69.1
+BoV-fastText,66.6,50.8,82.1
+"BiLSTM-max, untrained",73.3,70.6,85.8
+"BiLSTM-max, NMT En-Fr",80.1,73.7,90.3
+"BiLSTM-max, NLI",71.7,65.1,80.7
+"Gated ConvNet, Seq2Tree (best)",96.5,83.6,94.5
+"BERT-base, best layer (ours)",95.8,91.9,89.2
+"BERT-base, layer 12 (ours)",81.6,88.3,86.9
+"BERT-base, best layer (Jawahar)",96.2,87.0,88.1
